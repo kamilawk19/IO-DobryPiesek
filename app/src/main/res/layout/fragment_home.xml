@@ -6,14 +6,140 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:textSize="80sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/Avatar"
+        android:layout_width="100dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/ic_launcher_round"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:background="#cce3de"
+        android:padding="6dp"
+        android:text="Owner name"
+        android:textColor="#6b9080"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Avatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#cce3de"
+        android:padding="6dp"
+        android:text="Dog name"
+        android:textColor="#6b9080"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Avatar"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <ImageView
+        android:id="@+id/Calendar_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Avatar" />
+
+    <TextView
+        android:id="@+id/Calendar_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="63dp"
+        android:text="Upcoming event!"
+        android:textColor="#6b9080"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Calendar_img"
+        app:layout_constraintTop_toBottomOf="@+id/Avatar" />
+
+    <TextView
+        android:id="@+id/Event_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Event data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calendar_txt" />
+
+    <TextView
+        android:id="@+id/Event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Event name"
+        app:layout_constraintStart_toEndOf="@+id/Event_data"
+        app:layout_constraintTop_toBottomOf="@+id/Calendar_txt" />
+
+    <ImageView
+        android:id="@+id/Training_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_school"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Event_data" />
+
+    <TextView
+        android:id="@+id/Training_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Your last training: "
+        android:textColor="#6b9080"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Training_img"
+        app:layout_constraintTop_toBottomOf="@+id/Event_name" />
+
+    <TextView
+        android:id="@+id/Training_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Training name"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Training_txt"
+        app:layout_constraintTop_toBottomOf="@+id/Event_name" />
+
+    <Button
+        android:id="@+id/Finish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Finish Now"
+        android:backgroundTint="#B8D3C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Training_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
